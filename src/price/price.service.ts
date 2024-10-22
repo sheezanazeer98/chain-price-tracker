@@ -21,7 +21,7 @@ export class PriceService {
     
   }
 
-  @Cron('*/1 * * * *')
+  @Cron('*/5 * * * *')
   async fetchPrices() {
     console.log("Start Working");
     const chains = ['ethereum', 'polygon'];
