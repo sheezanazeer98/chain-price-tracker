@@ -83,7 +83,7 @@ export class PriceService {
     console.log("start mail working");
     console.log(process.env.EMAIL_USER);
     await this.mailerService.sendMail({
-      to: "adilbhattiiqna23@gmail.com",
+      to: email,
       from: process.env.EMAIL_USER,
       subject: subject,
       text: `The price has met the condition.Now Price is ${price} `,
